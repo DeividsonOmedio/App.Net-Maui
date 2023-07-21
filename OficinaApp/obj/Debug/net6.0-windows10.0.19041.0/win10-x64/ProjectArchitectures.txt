@@ -1,0 +1,1 @@
+C:\Users\deivi\source\repos\OficinaApp\OficinaApp\OficinaApp.csproj;x64

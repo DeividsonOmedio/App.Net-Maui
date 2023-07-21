@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OficinaApp.Pages.ExibirUsuarioPage"
+             Title="ExibirUsuarioPage">
+    <StackLayout>
+        <ListView x:Name="lsvUsuarios">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource=""
+                               Text="{Binding Email}"
+                               Detail="{Binding Senha}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
