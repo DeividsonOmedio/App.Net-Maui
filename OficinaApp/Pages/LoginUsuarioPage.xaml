@@ -25,7 +25,8 @@
             Text="Senha" />
         <Entry
             Placeholder="Digite sua senha"
-            x:Name="txtSenha"/>
+            x:Name="txtSenha"
+            IsPassword="True"/>
 
         <Button
             Text="Entrar"

@@ -16,6 +16,17 @@ namespace OficinaApp.Data
         {
             _conexaoBD = conexaoBD;
         }
+        public async Task<int> SalvaUsuario(Usuario usuario)
+        {
+           
+            
+             var usuarioIsSalvo = await ObtemUsuario(usuario.Id);
+            if (usuarioIsSalvo == null)
+                return await _conexaoBD.InsertAsync(usuario);
+            else
+                return await _conexaoBD.UpdateAsync(usuario);
+             
+        }
 
         public Task<List<Usuario>> ListaUsuarios()
         {
@@ -38,27 +49,16 @@ namespace OficinaApp.Data
 
         public Task<Usuario> ObtemUsuario(Guid id)
         {
-            var usuario = _conexaoBD
+            
+                var usuario = _conexaoBD
                 .Table<Usuario>()
                 .Where(x => x.Id == id)
                 .FirstOrDefaultAsync();
+           
 
             return usuario;
         }
 
-        public async Task<int> SalvaUsuario(Usuario usuario)
-        {
-            var usuarioIsSalvo = await ObtemUsuario(usuario.Id);
-
-            if(usuarioIsSalvo == null)
-            {
-                return await _conexaoBD.InsertAsync(usuario);
-            }
-            else 
-            {
-                return await _conexaoBD.UpdateAsync(usuario);
-            }
-        }
 
         public async Task<int> ExcluirUsuario(Guid id)
         {

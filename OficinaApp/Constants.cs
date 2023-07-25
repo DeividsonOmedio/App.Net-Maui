@@ -9,22 +9,9 @@ namespace OficinaApp
 {
     public static class Constants
     {
-        private const string DBFileName = "Dados.db3";
-
-        public const SQLiteOpenFlags Flags =
-            SQLiteOpenFlags.ReadWrite |
-            SQLiteOpenFlags.Create |
-            SQLiteOpenFlags.SharedCache;
-
-
-        public static string DataBasePath
+        public static string GetLocalFilePath(string filename)
         {
-            get
-            {
-                return Path.Combine(FileSystem.AppDataDirectory, DBFileName);
-            }
+            return System.IO.Path.Combine(FileSystem.AppDataDirectory, filename);
         }
     }
-
-    
 }

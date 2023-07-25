@@ -23,7 +23,8 @@
         <Entry
             Placeholder="Digite sua senha"
             x:Name="txtSenha"
-            Text="{Binding Senha}"/>
+            Text="{Binding Senha}"
+            IsPassword="True"/>
 
         <Button
             Text="Cadastrar"

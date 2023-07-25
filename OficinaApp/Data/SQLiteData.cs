@@ -10,17 +10,21 @@ namespace OficinaApp.Data
 {
     public class SQLiteData
     {
-        readonly SQLiteAsyncConnection _conexaoBD;
+         SQLiteAsyncConnection _conexaoBD;
 
         public UsuarioData UsuarioDataTable { get; set; }
 
-        public SQLiteData(string path)
+        public SQLiteData()
         {
+            string path = Constants.GetLocalFilePath("usuarios.db3");
+
+            if (_conexaoBD is not null) { return; }
             _conexaoBD = new SQLiteAsyncConnection(path);
-            _conexaoBD.CreateTableAsync<Usuario>().Wait();
+            _conexaoBD.CreateTableAsync<Usuario>();
 
             UsuarioDataTable = new UsuarioData(_conexaoBD);
+            
 
-        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   }
     }
 }

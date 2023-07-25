@@ -22,9 +22,9 @@ public partial class LoginUsuarioPage : ContentPage
                 return;
             }
 
-            App.usuario = usuario;
+            App.Usuario = usuario;
 
-            Navigation.PushAsync(new HomePrincipalPage());
+            await Navigation.PushAsync(new HomePrincipalPage());
         }
 
     }
