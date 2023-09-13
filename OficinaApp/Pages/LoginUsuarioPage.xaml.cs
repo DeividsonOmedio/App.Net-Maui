@@ -18,7 +18,7 @@ public partial class LoginUsuarioPage : ContentPage
         
             if(usuario == null)
             {
-                await DisplayAlert("Atenção", "Email ou Senha i nválidos", "Fechar");
+                await DisplayAlert("Atenção", "Email ou Senha inválidos", "Fechar");
                 return;
             }
 

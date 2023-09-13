@@ -4,6 +4,7 @@
             xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
             android:TabbedPage.ToolbarPlacement="Bottom" 
             x:Class="OficinaApp.Pages.HomePrincipalPage"
-             Title="HomePrincipalPage">
+             Title="HomePrincipalPage"
+            NavigationPage.HasNavigationBar="False">
     
 </TabbedPage>

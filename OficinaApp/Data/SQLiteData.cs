@@ -1,4 +1,6 @@
-﻿using OficinaApp.Model;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.EntityFrameworkCore;
+using OficinaApp.Model;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace OficinaApp.Data
 {
-    public class SQLiteData
+    public class SQLiteData : IdentityDbContext<ApplicatioUser>
     {
          SQLiteAsyncConnection _conexaoBD;
 
@@ -20,11 +22,19 @@ namespace OficinaApp.Data
 
             if (_conexaoBD is not null) { return; }
             _conexaoBD = new SQLiteAsyncConnection(path);
+
+
             _conexaoBD.CreateTableAsync<Usuario>();
+            _conexaoBD.CreateTableAsync<SistemaFinanceiro>();
+            _conexaoBD.CreateTableAsync<Categoria>();
+            _conexaoBD.CreateTableAsync<Despesa>();
+
 
             UsuarioDataTable = new UsuarioData(_conexaoBD);
             
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+        
     }
 }

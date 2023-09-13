@@ -14,12 +14,12 @@ public partial class HomePrincipalPage : TabbedPage
 
         var pagina2 = new ExibirUsuarioPage()
         {
-            Title = "Exibir Usuário",
+            Title = "Despesas",
             IconImageSource = ""
         };
         var pagina3 = new BuscaUsuarioPage()
         {
-            Title = "Buscar Usuário",
+            Title = "Resumo",
             IconImageSource = ""
         };
 

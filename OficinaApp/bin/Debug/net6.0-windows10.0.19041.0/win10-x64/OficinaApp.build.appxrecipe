@@ -727,17 +727,59 @@
     <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\entityframework\6.1.0\lib\net45\EntityFramework.SqlServer.dll">
+      <PackagePath>EntityFramework.SqlServer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\entityframework\6.1.0\lib\net45\EntityFramework.dll">
+      <PackagePath>EntityFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.aspnet.identity.core\2.2.4\lib\net45\Microsoft.AspNet.Identity.Core.dll">
+      <PackagePath>Microsoft.AspNet.Identity.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.aspnet.identity.entityframework\2.2.4\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll">
+      <PackagePath>Microsoft.AspNet.Identity.EntityFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.aspnetcore.cryptography.internal\6.0.20\lib\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll">
+      <PackagePath>Microsoft.AspNetCore.Cryptography.Internal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.aspnetcore.cryptography.keyderivation\6.0.20\lib\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll">
+      <PackagePath>Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.aspnetcore.identity.entityframeworkcore\6.0.20\lib\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll">
+      <PackagePath>Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.entityframeworkcore\6.0.20\lib\net6.0\Microsoft.EntityFrameworkCore.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.entityframeworkcore.abstractions\6.0.20\lib\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.entityframeworkcore.relational\6.0.20\lib\net6.0\Microsoft.EntityFrameworkCore.Relational.dll">
+      <PackagePath>Microsoft.EntityFrameworkCore.Relational.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.caching.abstractions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Caching.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.caching.memory\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll">
+      <PackagePath>Microsoft.Extensions.Caching.Memory.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.configuration\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.configuration.abstractions\6.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.dependencyinjection\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll">
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.dependencyinjection\6.0.1\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.identity.core\6.0.20\lib\net6.0\Microsoft.Extensions.Identity.Core.dll">
+      <PackagePath>Microsoft.Extensions.Identity.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.identity.stores\6.0.20\lib\net6.0\Microsoft.Extensions.Identity.Stores.dll">
+      <PackagePath>Microsoft.Extensions.Identity.Stores.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.extensions.logging\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
@@ -793,8 +835,17 @@
     <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\microsoft.windowsappsdk\1.1.5\lib\net5.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\sqlite-net-pcl\1.8.116\lib\netstandard2.0\SQLite-net.dll">
       <PackagePath>SQLite-net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\sqlitenetextensions\2.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\SQLiteNetExtensions.dll">
+      <PackagePath>SQLiteNetExtensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\sqlitenetextensions.async\2.1.0\lib\netstandard1.1\SQLiteNetExtensionsAsync.dll">
+      <PackagePath>SQLiteNetExtensionsAsync.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\deivi\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll">
       <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>

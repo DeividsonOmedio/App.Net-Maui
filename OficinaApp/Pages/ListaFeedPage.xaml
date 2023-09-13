@@ -2,11 +2,83 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OficinaApp.Pages.ListaFeedPage"
-             Title="ListaFeedPage">
+             Title="ListaFeedPage"
+             NavigationPage.HasNavigationBar="False">
     <VerticalStackLayout>
+        
         <Label 
             Text="Feed"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            Margin="14" />
+
+        <CollectionView x:Name="lvsSistemas"
+                        ItemsSource="{Binding Sistemas}"
+                        SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged"
+                        Margin="14">
+            
+        </CollectionView>
+        
+        <Label 
+            Text="Próximas"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Margin="14" />
+
+        <Button
+            Text="Listar sistema Financeiro"
+            x:Name="btnListarSistema"
+            Clicked="btnListarSistema_Clicked"
+            Margin="16"/>
+
+        <CollectionView x:Name="proximasList" Grid.Row="4">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding Id}"/>
+                        <Label Grid.Column="1" Text="{Binding Name}"/>
+                        
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label 
+            Text="Entradas"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="14" />
+
+
+        <ListView x:Name="lsvSistemas">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource=""
+                               Text="{Binding Email}"
+                               Detail="{Binding Senha}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+
+        <Label
+            x:Name="lblSistema"
+            Text="Sistema" />
+        <Entry
+            Placeholder="Digite o sistema"
+            x:Name="txtSistema"
+            IsPassword="True"/>
+        <Button
+            Text="Adicionar sistema Financeiro"
+            x:Name="btnAddSistema"
+            Clicked="btnAddSistema_Clicked"
+            Margin="16"/>
+
     </VerticalStackLayout>
 </ContentPage>

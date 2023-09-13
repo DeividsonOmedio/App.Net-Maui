@@ -38,8 +38,9 @@ public partial class App : Application
 		}
 			
 	}
+  
 
-	public static Usuario Usuario { get; set; }
+    public static Usuario Usuario { get; set; }
 
 	public App()
 	{

@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = OficinaApp.Pages.HomePrinc
 build_metadata.AdditionalFiles.TargetPath = Pages\HomePrincipalPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\HomePrincipalPage.xaml
 
+[C:/Users/deivi/source/repos/OficinaApp/OficinaApp/Pages/InserirNovaDespesa.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OficinaApp.Pages.InserirNovaDespesa.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\InserirNovaDespesa.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\InserirNovaDespesa.xaml
+
 [C:/Users/deivi/source/repos/OficinaApp/OficinaApp/Pages/ListaFeedPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OficinaApp.Pages.ListaFeedPage.xaml
@@ -63,6 +69,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OficinaApp.Pages.LoginUsuarioPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\LoginUsuarioPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\LoginUsuarioPage.xaml
+
+[C:/Users/deivi/source/repos/OficinaApp/OficinaApp/Pages/NovaDespesa.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OficinaApp.Pages.NovaDespesa.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\NovaDespesa.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\NovaDespesa.xaml
 
 [C:/Users/deivi/source/repos/OficinaApp/OficinaApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

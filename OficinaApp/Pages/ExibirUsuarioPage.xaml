@@ -4,7 +4,38 @@
              x:Class="OficinaApp.Pages.ExibirUsuarioPage"
              Title="ExibirUsuarioPage">
     <StackLayout>
+        <CollectionView ItemsSource="{Binding Sistemas}"
+                        SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged_1"
+                        Margin="14">
+
+        </CollectionView>
+
+        <Label 
+            Text="Entradas"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="14" />
+        
+        
         <ListView x:Name="lsvUsuarios">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource=""
+                               Text="{Binding Email}"
+                               Detail="{Binding Senha}"/> 
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        
+        <Label 
+            Text="Pagas"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" 
+           />
+        
+        <ListView x:Name="lsvUsuari">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ImageCell ImageSource=""
@@ -13,5 +44,37 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Label 
+            Text="A Pagar"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            />
+        <ListView x:Name="lsvUsus">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource=""
+                               Text="{Binding Email}"
+                               Detail="{Binding Senha}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label 
+            Text="A Receber"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            />
+        
+        <ListView x:Name="lsvUs">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource=""
+                               Text="{Binding Email}"
+                               Detail="{Binding Senha}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </StackLayout>
 </ContentPage>

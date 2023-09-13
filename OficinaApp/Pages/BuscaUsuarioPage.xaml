@@ -4,9 +4,48 @@
              x:Class="OficinaApp.Pages.BuscaUsuarioPage"
              Title="BuscaUsuarioPage">
     <VerticalStackLayout>
+
+        <CollectionView ItemsSource="{Binding Sistemas}"
+                        SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged"
+                        Margin="14">
+
+        </CollectionView>
+
         <Label 
-            Text="Busca"
+            Text="Total Despesas"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" 
+            Margin="14" />
+
+        <Label 
+            Text="Entradas"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="14" />
+
+        <Label 
+            Text="Saldo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="14" />
+
+        <Label 
+            Text="Total Entradas"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="14" />
+
+        <Label 
+            Text="A Receber"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="14" />
+
+        <Label 
+            Text="Saldo futuro"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="14" />
     </VerticalStackLayout>
 </ContentPage>
